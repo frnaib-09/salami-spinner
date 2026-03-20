@@ -21,12 +21,18 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    position: relative;
 }
 
 .logo {
     position: absolute;
     top: 20px;
     left: 20px;
+    width: 100px;
+}
+
+.logo img {
+    width: 100%;
 }
 
 h1 {
