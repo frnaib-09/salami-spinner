@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salami Niben Koto?</title>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                   css                                   -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- ----------------------------------------------------------------------- -->
+</head>
+<body>
+
+    <h1>সালামি নিবেন কত?</h1>
+    <p>Spin the wheel to claim your Eid Salami! </p>
+
+    <div class="wheel-container">
+        <div class="pointer"></div>
+        <svg viewBox="-100 -100 200 200" class="wheel" id="wheel">
+            <g id="slices">
+                <path d="M0,0 L0,-100 A100,100 0 0,1 86.6,-50 Z" fill="#FEE440"/> 
+                <path d="M0,0 L86.6,-50 A100,100 0 0,1 86.6,50 Z" fill="#F15BB5"/>
+                <path d="M0,0 L86.6,50 A100,100 0 0,1 0,100 Z" fill="#00BBF9"/>
+                <path d="M0,0 L0,100 A100,100 0 0,1 -86.6,50 Z" fill="#00F5D4"/>
+                <path d="M0,0 L-86.6,50 A100,100 0 0,1 -86.6,-50 Z" fill="#9B5DE5"/>
+                <path d="M0,0 L-86.6,-50 A100,100 0 0,1 0,-100 Z" fill="#FF6B6B"/>
+            </g>
+            <g font-size="14" font-weight="bold" fill="white" text-anchor="middle" font-family="sans-serif">
+                <text transform="rotate(30) translate(0, -70)" fill="#1a4a38">Duaaaa</text>
+                <text transform="rotate(90) translate(0, -70)" fill="#1a4a38">BDT. 50</text>
+                <text transform="rotate(150) translate(0, -70)" fill="#1a4a38">BDT. 100</text>
+                <text transform="rotate(210) translate(0, -70)" fill="#1a4a38">BDT. 200</text>
+                <text transform="rotate(270) translate(0, -70)" fill="#1a4a38">BDT. 500</text>
+                <text transform="rotate(330) translate(0, -70)" fill="#1a4a38">BDT. 1000</text>
+            </g>
+        </svg>
+    </div>
+
+    <button class="spin-btn" onclick="spinWheel()" id="spinBtn">SPIN NOW!</button>
+
+    <div class="modal" id="resultModal">
+        <div class="modal-content">
+            <h2>Alhamdulillah! </h2>
+            <video src="./video/14740081_3840_2160_30fps.mp4" autoplay loop muted></video>
+            <p>You have won: <b>Unlimited Duaaaa!</b></p>
+
+            <button class="close-btn" onclick="closeModal()">Accept Duaaaa</button>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 script                                  -->
+    <script src="./js/script.js"></script>
+    <!-- ----------------------------------------------------------------------- -->
+</body>
+</html>
